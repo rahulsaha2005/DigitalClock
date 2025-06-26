@@ -37,7 +37,7 @@ body {
   letter-spacing: 2px;
   color: white;
   font-weight: 600;
-  transform: translateX(-30px); 
+  transform: translateX(-30px);
 }
 
 .time {
@@ -86,20 +86,13 @@ span {
   color: white;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 600px) {
-  .container {
-    width: 90vw;
-  }
-
   .heading {
-    transform: translateX(0); 
     font-size: 16px;
     letter-spacing: 1px;
+    transform: translateY(-75px);
     margin-bottom: 2px;
-    text-align: center;
   }
-
   .sub-hours,
   .sub-min,
   .sub-sec {
@@ -108,9 +101,8 @@ span {
   }
 
   .time {
-    transform: translateY(-45px);
+    transform: translateY(-45px) translateX(16px);
   }
-
   .unit {
     width: 45px;
     height: 30px;
@@ -119,5 +111,6 @@ span {
   span {
     width: 80px;
     height: 75px;
+    background-color: #8970c2d4;
   }
 }
