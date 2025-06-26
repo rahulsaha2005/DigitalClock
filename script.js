@@ -8,6 +8,13 @@ function updateTime() {
   const minutes = document.querySelector(".text2");
   let unit = document.querySelector(".unit");
 
+  let temp;
+  if (hour >= 12 && hour <= 24) {
+    temp = "P.M.";
+  } else {
+    temp = "A.M.";
+  }
+
   hour %= 12;
   if (hour == 0) {
     hour = 12;
@@ -18,12 +25,6 @@ function updateTime() {
   minutes.textContent = pad(min);
   seconds.textContent = pad(sec);
 
-  let temp;
-  if (hours >= 12 && hours <= 24) {
-    temp = "P.M.";
-  } else {
-    temp = "A.M.";
-  }
   unit.textContent = temp;
 }
 
