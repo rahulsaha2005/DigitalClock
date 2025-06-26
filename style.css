@@ -90,27 +90,29 @@ span {
   .heading {
     font-size: 16px;
     letter-spacing: 1px;
-    transform: translateY(-75px);
-    margin-bottom: 2px;
+    /* transform: translateY(-75px); */
+    /* margin-bottom: 2px; */
   }
   .sub-hours,
   .sub-min,
   .sub-sec {
-    width: 80px;
-    font-size: 14px;
+    width: 60px;
+    font-size: 10px;
   }
 
-  .time {
+  /* .time {
     transform: translateY(-45px) translateX(16px);
-  }
+  } */
   .unit {
     width: 45px;
     height: 30px;
+    font-weight: 400;
   }
 
   span {
-    width: 80px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     background-color: #8970c2d4;
+    font-size: 40px;
   }
 }
